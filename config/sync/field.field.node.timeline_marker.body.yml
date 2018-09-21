@@ -1,0 +1,22 @@
+uuid: 520477dd-2ef2-4533-a59a-222831784877
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.timeline_marker
+  module:
+    - text
+id: node.timeline_marker.body
+field_name: body
+entity_type: node
+bundle: timeline_marker
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

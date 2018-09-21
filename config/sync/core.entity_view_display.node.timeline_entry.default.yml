@@ -1,0 +1,75 @@
+uuid: f4da1836-3532-4ee5-8f2c-6ce16c5dc69c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.timeline_entry.body
+    - field.field.node.timeline_entry.field_date_integer
+    - field.field.node.timeline_entry.field_display_date
+    - field.field.node.timeline_entry.field_gender_label
+    - field.field.node.timeline_entry.field_media
+    - field.field.node.timeline_entry.field_tags
+    - node.type.timeline_entry
+  module:
+    - text
+    - user
+id: node.timeline_entry.default
+targetEntityType: node
+bundle: timeline_entry
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date_integer:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_display_date:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_gender_label:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

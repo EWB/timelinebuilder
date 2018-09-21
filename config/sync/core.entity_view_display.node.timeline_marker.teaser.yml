@@ -1,0 +1,30 @@
+uuid: a434fcfe-061a-4b0c-98b8-da86ffd648e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.timeline_marker.body
+    - node.type.timeline_marker
+  module:
+    - text
+    - user
+id: node.timeline_marker.teaser
+targetEntityType: node
+bundle: timeline_marker
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

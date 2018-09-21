@@ -1,0 +1,14 @@
+uuid: d706e0e1-5614-46da-950e-973f5201c841
+name: Timelinebuilder
+mail: ewilliamsbergen@stlawu.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

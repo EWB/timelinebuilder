@@ -1,0 +1,29 @@
+uuid: 35437e16-7f7e-4f85-855c-9e90508b4c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.timeline_entry
+    - taxonomy.vocabulary.tags
+id: node.timeline_entry.field_tags
+field_name: field_tags
+entity_type: node
+bundle: timeline_entry
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

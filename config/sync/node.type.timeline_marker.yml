@@ -1,0 +1,18 @@
+uuid: f7459231-558e-4965-b17d-6b6a07b2ff88
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Timeline Marker'
+type: timeline_marker
+description: 'Use to create a timeline header/marker'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

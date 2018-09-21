@@ -1,0 +1,23 @@
+uuid: 83143859-6531-424a-a6de-35759d3b7441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_integer
+    - node.type.timeline_entry
+id: node.timeline_entry.field_date_integer
+field_name: field_date_integer
+entity_type: node
+bundle: timeline_entry
+label: Date
+description: 'Use to code the start, or general '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

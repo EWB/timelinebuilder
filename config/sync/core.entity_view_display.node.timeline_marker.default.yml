@@ -1,0 +1,21 @@
+uuid: 5fa94779-2ac7-4bd0-afdf-a2d33fb6c401
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.timeline_marker.body
+    - node.type.timeline_marker
+  module:
+    - user
+id: node.timeline_marker.default
+targetEntityType: node
+bundle: timeline_marker
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true

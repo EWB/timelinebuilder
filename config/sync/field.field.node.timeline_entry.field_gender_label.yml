@@ -1,0 +1,29 @@
+uuid: 2c9a80ed-8db6-459a-9676-eda4d8587eba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gender_label
+    - node.type.timeline_entry
+    - taxonomy.vocabulary.gender
+id: node.timeline_entry.field_gender_label
+field_name: field_gender_label
+entity_type: node
+bundle: timeline_entry
+label: 'Gender Label'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gender: gender
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
