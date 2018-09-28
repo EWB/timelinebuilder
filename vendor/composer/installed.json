@@ -2867,6 +2867,91 @@
         "description": "Drupal is an open source content management platform powering millions of websites and applications."
     },
     {
+        "name": "drupal/entity_browser",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/entity_browser",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "683a7a252c947433c7b78bb838d6d8973c13cf77"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "require-dev": {
+            "drupal/ctools": "*",
+            "drupal/inline_entity_form": "*",
+            "drupal/paragraphs": "*",
+            "drupal/token": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev",
+                "dev-8.x-1.x": "8.1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1536328684",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Janez Urevc",
+                "homepage": "https://github.com/slashrsm",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Primoz Hmeljak",
+                "homepage": "https://github.com/primsi",
+                "role": "Maintainer"
+            },
+            {
+                "name": "See other contributors",
+                "homepage": "https://www.drupal.org/node/1943336/committers",
+                "role": "contributor"
+            },
+            {
+                "name": "Primsi",
+                "homepage": "https://www.drupal.org/user/282629"
+            },
+            {
+                "name": "marcingy",
+                "homepage": "https://www.drupal.org/user/77320"
+            },
+            {
+                "name": "samuel.mortenson",
+                "homepage": "https://www.drupal.org/user/2582268"
+            },
+            {
+                "name": "slashrsm",
+                "homepage": "https://www.drupal.org/user/744628"
+            }
+        ],
+        "description": "Entity browsing and selecting component.",
+        "homepage": "http://drupal.org/project/entity_browser",
+        "support": {
+            "source": "http://cgit.drupalcode.org/entity_browser",
+            "issues": "http://drupal.org/project/issues/entity_browser",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
         "name": "drupal/fontawesome",
         "version": "2.6.0",
         "version_normalized": "2.6.0.0",
@@ -2991,137 +3076,6 @@
         "homepage": "https://www.drupal.org/project/geolocation",
         "support": {
             "source": "http://cgit.drupalcode.org/geolocation"
-        }
-    },
-    {
-        "name": "drupal/jcarousel",
-        "version": "4.0.0",
-        "version_normalized": "4.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/jcarousel",
-            "reference": "8.x-4.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/jcarousel-8.x-4.0.zip",
-            "reference": "8.x-4.0",
-            "shasum": "62b91427f95d4a482fa1f9b32ec6a422eea046ee"
-        },
-        "require": {
-            "drupal/core": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-4.x": "4.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-4.0",
-                "datestamp": "1492072743",
-                "security-coverage": {
-                    "status": "covered",
-                    "message": "Covered by Drupal's security advisory policy"
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0-or-later"
-        ],
-        "authors": [
-            {
-                "name": "RobLoach",
-                "homepage": "https://www.drupal.org/user/61114"
-            },
-            {
-                "name": "mangy.fox",
-                "homepage": "https://www.drupal.org/user/2513442"
-            },
-            {
-                "name": "markpavlitski",
-                "homepage": "https://www.drupal.org/user/2438878"
-            },
-            {
-                "name": "mfer",
-                "homepage": "https://www.drupal.org/user/25701"
-            },
-            {
-                "name": "niko-",
-                "homepage": "https://www.drupal.org/user/1409266"
-            },
-            {
-                "name": "quicksketch",
-                "homepage": "https://www.drupal.org/user/35821"
-            },
-            {
-                "name": "voleger",
-                "homepage": "https://www.drupal.org/user/3260314"
-            }
-        ],
-        "description": "Create jQuery-based carousel rotators.",
-        "homepage": "https://www.drupal.org/project/jcarousel",
-        "support": {
-            "source": "http://cgit.drupalcode.org/jcarousel"
-        }
-    },
-    {
-        "name": "drupal/owlcarousel",
-        "version": "1.0.0-alpha1",
-        "version_normalized": "1.0.0.0-alpha1",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/owl-carousel",
-            "reference": "8.x-1.0-alpha1"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/owlcarousel-8.x-1.0-alpha1.zip",
-            "reference": "8.x-1.0-alpha1",
-            "shasum": "fed6e3f0b20b4f536949b54300ff313dd11048d8"
-        },
-        "require": {
-            "drupal/core": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-1.0-alpha1",
-                "datestamp": "1503465544",
-                "security-coverage": {
-                    "status": "not-covered",
-                    "message": "Alpha releases are not covered by Drupal security advisories."
-                }
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Sebastien @Actualys",
-                "homepage": "https://www.drupal.org/user/380104"
-            },
-            {
-                "name": "ipwa",
-                "homepage": "https://www.drupal.org/user/130909"
-            },
-            {
-                "name": "swim",
-                "homepage": "https://www.drupal.org/user/1968266"
-            }
-        ],
-        "description": "Drupal integration for Owl Carousel",
-        "homepage": "https://www.drupal.org/project/owlcarousel",
-        "support": {
-            "source": "http://cgit.drupalcode.org/owlcarousel",
-            "issues": "https://www.drupal.org/project/owlcarousel"
         }
     },
     {
