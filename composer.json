@@ -28,6 +28,7 @@
         "drupal/entity_browser": "^2.0",
         "drupal/fontawesome": "^2.6",
         "drupal/geolocation": "^1.11",
+        "drupal/inline_entity_form": "^1.0",
         "drupal/simple_timeline": "^1.1",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
